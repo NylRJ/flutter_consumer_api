@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
+import '../../../utils/utils.dart';
 import '../../../widgets/widgets.dart';
 import '../../../pages/login/widgets/widgets.dart';
 
@@ -9,19 +10,21 @@ class LoginForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Responsive responsive = Responsive.of(context);
     return SafeArea(
       top: false,
       child: Container(
         width: 300,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
           children: [
             InputTextLogin(
               iconPath: 'assets/pages/login/icons/email.svg',
               placeholder: 'Email',
             ),
             SizedBox(
-              height: 20,
+              height: responsive.ip(2),
             ),
             InputTextLogin(
               iconPath: 'assets/pages/login/icons/key.svg',
@@ -39,18 +42,18 @@ class LoginForm extends StatelessWidget {
                   onPressed: () {}),
             ),
             SizedBox(
-              height: 20,
+              height: responsive.ip(2),
             ),
             RoundedButton(
               label: "Entrar",
               onPressed: () {},
             ),
             SizedBox(
-              height: 30,
+              height: responsive.ip(3.3),
             ),
             Text('Ou continue com'),
             SizedBox(
-              height: 10,
+              height: responsive.ip(1),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -73,7 +76,7 @@ class LoginForm extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 30,
+              height: responsive.ip(2.7),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
