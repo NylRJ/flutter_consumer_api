@@ -72,7 +72,7 @@ class LoginForm extends StatelessWidget {
                   size: 55,
                   backgroundColor: Color(0xffFF1744),
                   onPressed: () async {
-                    await Auth.instance.google();
+                    await Auth.instance.signInWithGoogle();
                     print('Logado');
                   },
                   iconPath: 'assets/pages/login/icons/google.svg',
