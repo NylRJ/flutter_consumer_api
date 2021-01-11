@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "991009203157",
+    "project_id": "zafer-941f0",
+    "storage_bucket": "zafer-941f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991009203157:android:6843f9490ab0c79d19d35c",
+        "android_client_info": {
+          "package_name": "dina.ec.flutter_ui_avancada"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991009203157-89did539rcgkc4gaihdfcceb3c2pjdq1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dina.ec.flutter_ui_avancada",
+            "certificate_hash": "32382bbe9bc1f21ed084febc728663c2b71c3372"
+          }
+        },
+        {
+          "client_id": "991009203157-i368n3nj37q5t6kdstr37b3f31vrnmqr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUSlJoeuqYCVLnan2EKL3vk_l6GMfih14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991009203157-i368n3nj37q5t6kdstr37b3f31vrnmqr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

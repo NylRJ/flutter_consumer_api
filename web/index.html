@@ -21,6 +21,7 @@
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
+       
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
@@ -28,6 +29,22 @@
       });
     }
   </script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA5ByE-9fEqqeVugH9gcmQi77GXH3HVcFA",
+    authDomain: "zafer-941f0.firebaseapp.com",
+    projectId: "zafer-941f0",
+    storageBucket: "zafer-941f0.appspot.com",
+    messagingSenderId: "991009203157",
+    appId: "1:991009203157:web:4fd74ca60cd129f119d35c"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+  
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_ui_avancada/libs/libs.dart';
 
 import '../../../utils/utils.dart';
 import '../../../widgets/widgets.dart';
@@ -61,7 +62,7 @@ class LoginForm extends StatelessWidget {
                 CircularButton(
                   size: 55,
                   backgroundColor: Color(0xff448AFF),
-                  onPressed: () {},
+                  onPressed: () async {},
                   iconPath: 'assets/pages/login/icons/facebook.svg',
                 ),
                 SizedBox(
@@ -70,7 +71,10 @@ class LoginForm extends StatelessWidget {
                 CircularButton(
                   size: 55,
                   backgroundColor: Color(0xffFF1744),
-                  onPressed: () {},
+                  onPressed: () async {
+                    await Auth.instance.google();
+                    print('Logado');
+                  },
                   iconPath: 'assets/pages/login/icons/google.svg',
                 ),
               ],

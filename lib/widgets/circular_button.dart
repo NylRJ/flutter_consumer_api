@@ -14,15 +14,19 @@ class CircularButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        width: size,
-        height: size,
-        padding: EdgeInsets.all(10),
-        decoration: BoxDecoration(
-            color: backgroundColor ?? AppColors.primaryColor,
-            shape: BoxShape.circle),
-            child: SvgPicture.asset(iconPath,color: Colors.white,),
-            );
+    return CupertinoButton(
+      onPressed: onPressed,
+      padding: EdgeInsets.zero,
+          child: Container(
+          width: size,
+          height: size,
+          padding: EdgeInsets.all(10),
+          decoration: BoxDecoration(
+              color: backgroundColor ?? AppColors.primaryColor,
+              shape: BoxShape.circle),
+              child: SvgPicture.asset(iconPath,color: Colors.white,),
+              ),
+    );
 
   }
 }

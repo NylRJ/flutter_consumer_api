@@ -45,14 +45,23 @@ class _LoginPageState extends State<LoginPage> with AfterLayoutMixin {
                   height: responsive.height,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [Welcome(), LoginForm()],
+                    children: [Welcome(orientation:orientation), LoginForm()],
                   ),
                 ),
               );
             } else {
               return Row(
                 children: [
-                  Expanded(child: Welcome()),
+                  Expanded(
+                    child: SingleChildScrollView(
+                      physics: NeverScrollableScrollPhysics(),
+                      child: Container(
+                        padding: EdgeInsets.only(left: 20),
+                        height: responsive.height,
+                        child: Center(child: Welcome()),
+                        ),
+                        ),
+                        ),
                   Expanded(
                     child: SingleChildScrollView(
                       child: Container(
